@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="./css/tablet.css">
     <link rel="stylesheet" href="./css/desktop.css">
 </head>
-<body>
+<body body>
     <!----------HEADER---------->
     <header class="header">
         <div class="container wrap">
@@ -24,11 +24,69 @@
                     <li class="item"> <a class="link" href="./portfolio.html">Portfolio</a> </li>
                     <li class="item"> <a class="link" href="">Contacts</a> </li>
                 </ul>
+                <button type="button" class="menu-open" data-menu-open>
+                    <svg class="burger" width="32" height="22">
+                        <use href="./images/svg/symbol-defs.svg#hamburger"></use>
+                    </svg>
+                </button>
             </nav>
             <ul class="contacts-list list">
                 <li class="item"><a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
                 <li class="item"><a class="link" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
             </ul>
+        </div>
+        <!-- MOBILE-MENU -->
+        <div class="mobile-menu is-hidden" data-menu>
+            <button type="button" class="menu-close" data-menu-close>
+                <svg class="icon" width="8px" height="8px">
+                    <use href="./images/svg/symbol-defs.svg#close"></use>
+                </svg>
+            </button>
+            <nav class="nav-wrap">
+                <div>
+                    <ul class="mob-site-nav list">
+                        <li class="item"> <a class="link" href="./index.html">Studio</a> </li>
+                        <li class="item"> <a class="link" href="./portfolio.html">Portfolio</a> </li>
+                        <li class="item"> <a class="link" href="">Contacts</a> </li>
+                    </ul>
+                </div>
+                <div>
+                    <ul class="mob-contacts-list list">
+                        <li class="item"><a class="phone link" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
+                        <li class="item"><a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                    </ul>
+                    <ul class="mob-soc list">
+                        <li class="item">
+                            <a href="" class="link">
+                                <svg class="icon" width="24" height="24">
+                                    <use href="./images/svg/symbol-defs.svg#instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="item">
+                            <a href="" class="link">
+                                <svg class="icon" width="24" height="24">
+                                    <use href="./images/svg/symbol-defs.svg#twitter"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="item">
+                            <a href="" class="link">
+                                <svg class="icon" width="24" height="24">
+                                    <use href="./images/svg/symbol-defs.svg#facebook"></use>
+                                </svg> 
+                            </a>
+                        </li>
+                        <li class="item">
+                            <a href="" class="link">
+                                <svg class="icon" width="24" height="24">
+                                    <use href="./images/svg/symbol-defs.svg#linkedin"></use>
+                                </svg>  
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
         </div>
         </header>
     <main class="main">
@@ -403,5 +461,6 @@
         </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
 </body>
 </html>
