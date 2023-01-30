@@ -177,13 +177,11 @@
   .contacts-list .link:focus {
     color: var(--brand-color);
   } 
-  @media screen and (max-width: 428px) {
-    .site-nav {
-      display: none;
-    }
-    .contacts-list {
-      display: none;
-    }
+  .site-nav {
+    display: none;
+  }
+  .contacts-list {
+    display: none;
   }
   
   /* ---MOBILE-MENU--- */
