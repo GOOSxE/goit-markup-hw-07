@@ -31,10 +31,10 @@
     padding-top: 96px;
     padding-bottom: 96px;
   }
-  h1,h2,h3,h4,h5,h6,p {
+  h1, h2, h3, h4, h5, h6, p {
     margin: 0;
   }
-  ul,li {
+  ul, li {
     margin: 0;
   }
   img {
@@ -119,14 +119,13 @@
   .site-nav {
     display: flex;
     align-items: center;
-    margin-left: 76px;
   } 
   .site-nav .link {
     display: block;
     padding-top: 24px;
     padding-bottom: 24px;
   
-    font-weight: 700;
+    font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -156,7 +155,6 @@
   } 
    .contacts-list {
     display: flex;
-
   } 
    .contacts-list .link {
     display: block;
@@ -348,6 +346,7 @@
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.04em;
+    text-align: center;
   
     color: var(--white-color);
     background-color: var(--brand-color);
@@ -367,20 +366,17 @@
   
   .benefits {
     padding-top: 96px;
-    padding-bottom: 0;
+    padding-bottom: 96px;
   }
   .benefits-list {
     display: flex;
     flex-wrap: wrap;
   }
+  .benefits-list .item:not(:last-child) {
+    margin-bottom: 72px;
+  }
   .benefits .thumb {
     display: none;
-  }
-  .benefits .icon {
-    display: block;
-  
-    width: 64px;
-    height: 64px;
   }
   .benefits .title {
     display: block;
@@ -393,18 +389,21 @@
     text-align: center;
     letter-spacing: 0.02em;
     text-transform: capitalize;
+
+    color: var(--navy-blue-color);
   }
   .benefits .description {
     display: block;
     width: 100%;
-    margin-bottom: 72px;
     
     font-weight: 500;
     font-size: 16px;
-    line-height: 24px;
-    /* or 150% */
+    line-height: 1.50;
     
     letter-spacing: 0.02em;
+  }
+  .benefits-list .item:not(:last-child) {
+    margin-bottom: 72px;
   }
   
   /*---------SERVICES-------- */
@@ -413,9 +412,9 @@
   }
   /*------------TEAM------------- */
   .team {
+    padding-bottom: 128px;
     background-color: var(--cloud-color);
   }
-  
   .team .title {
     margin-bottom: 72px;
   
@@ -442,7 +441,7 @@
   .team-list .card:not(:last-child) {
     margin-bottom: 72px;
   }
-  .team-list  .img{
+  .team-list .img{
     margin-bottom: 32px;
   }
   .team .employee {
@@ -507,12 +506,13 @@
   /* -------CUSTOMERS-------  */
   
   .customers .title {
+    margin-bottom: 72px;
+
     font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
     text-align: center;
     letter-spacing: 0.02em;
-    margin-bottom: 72px;
   
     color: var(--navy-blue-color);
   }
@@ -529,7 +529,7 @@
   .customers .list .item:not(:nth-child(2n)) {
     margin-right: 16px;
   }
-  .customers .list .item:not(:nth-last-child(-n+2)) {
+  .customers .list .item:not(:nth-last-child(-n + 2)) {
     margin-bottom: 72px ;
   }
   .customers .link { 
@@ -740,6 +740,10 @@
     color: var(--cornflower-color);
   }
   .social-media {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
     margin-bottom: 72px;
   }
   .social-media .title {
@@ -799,10 +803,15 @@
   
     color: var(--white-color);
   }
+  .form-field {
+    display: block;
+    width: 100%;
+  }
   .subscribe-form .email-input {
     width: 100%;
     margin-bottom: 16px;
     padding: 8px 16px;
+    max-height: 40px;
   
     font-weight: 400;
     font-size: 12px;
@@ -830,8 +839,10 @@
     justify-content: center;
     align-items: center;
     width: 165px;
+    max-height: 40px;
     padding: 8px 24px;
     gap: 16px;
+    margin: 0 auto;
   
     font-weight: 500;
     font-size: 16px;
