@@ -115,6 +115,46 @@
         margin-bottom: 0;
     }
 
+    /* SECOND-PAGE-PORTFOLIO */
+    
+    .portfolio {
+        padding-top: 64px;
+        padding-bottom: 96px;
+      }
+    
+    /* ------FILTER-BTNS------ */
+
+    .filters-list {
+        margin-bottom: 64px;
+        justify-content: center;
+    }
+    .filters-list .item + .item{
+        margin-left: 24px;
+    }
+    .filters-list .item {
+        margin-bottom: 0;
+    }
+    .filters-list .btn {
+        padding: 11px 23px;
+    }
+
+    /* PROJECTS-LIST */
+    .projects-list {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .projects-list .item {
+        width: calc((100% - 24px) / 2);
+    }
+    .projects-list .item:nth-child(even) {
+        margin-left: 24px;
+    }
+    
+
+
+
+
+
     /* FOOTER  */
 
     .footer .container {
