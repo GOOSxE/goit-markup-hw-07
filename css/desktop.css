@@ -1,0 +1,200 @@
+@media screen and (min-width: 1440px) {
+
+    .container {
+        max-width: 1160px;
+    }
+    /* HEADER */
+    .header {
+        max-height: 76px;
+    }
+    .header .wrap{
+        display: flex;
+        align-items: center;
+    }
+    .site-nav .link {
+        display: block;
+        padding-top: 24px;
+        padding-bottom: 28px;
+    }
+    .site-nav {
+        margin-left: 76px;
+    }
+    .contacts-list {
+        position: unset;
+        display: flex;
+        flex-direction: unset;
+    }
+    .contacts-list .item:first-child {
+        margin-bottom: 0px;
+    }
+    .contacts-list .item:last-child {
+        margin-left: 40px;
+    }
+    .contacts-list .link {
+        font-size: 16px;
+        line-height: 1.50;
+        letter-spacing: 0.02em;
+    }
+    /* HERO */
+    .hero {
+        padding: 188px 0;
+    }
+    .hero-overlay {
+        background-image: 
+          var(--hero-gradient)
+          url(../images/banner/hero-bg-desktop.jpg);
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: cover;
+    }
+    @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        .hero-overlay {
+          background-image: 
+          var(--hero-gradient) 
+          url('../images/banner/hero-bg-desktop-2x.jpg');
+        }
+    }
+    .hero .title {
+        margin-bottom: 48px;
+
+        line-height: 1.07;
+    }
+    /* BENEFITS */
+    .benefits {
+        padding: 120px 0;
+    }
+    .benefits-list {
+        display: flex;
+        justify-content: center;
+    }
+    .benefits-list .item {
+        width: 264px;
+    }
+    .benefits-list .item:nth-child(1) {
+        margin-bottom: 0;
+    }
+    .benefits-list .item:not(:last-child) {
+        margin-right: 24px;
+    }
+    .benefits .thumb {
+        display: block;
+        padding: 24px 100px;
+        margin-bottom: 8px;
+      
+        background-color: var(--cloud-color);
+    }
+    .benefits .icon {
+        display: block;
+        width: 64px;
+        height: 64px;
+    }
+    .benefits .title {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.20;
+    }
+    .benefits .description {
+        font-weight: 400;
+    }
+    /* SERVICES */
+    .services {
+        display: block;
+        padding-top: 0;
+        padding-bottom: 120px;
+    }
+    .services-list {
+      display: flex;
+      justify-content: center;
+    }
+    .services-list .item+.item {
+      margin-left: 24px;
+    }
+    .services .title {
+      margin-bottom: 72px;
+    
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 1.1;
+      text-align: center;
+      letter-spacing: 0.02em;
+      text-transform: capitalize;
+    
+      color: var(--navy-blue-color);
+    }
+    /* TEAM  */
+    .team {
+        padding: 120px 0 ;
+    }
+    .team-list .card:nth-child(-n + 2) {
+        margin-bottom: 0;
+    }
+    .team-list .card:not(:last-child) {
+        margin-right: 24px;
+    }
+    /* CUSTOMERS */
+    .customers  {
+        padding: 120px 0;
+    }
+    .customers .list .item {
+        width: calc((100% - 24px) / 6);
+        max-width: 168px;
+    }
+    .customers .list .item:not(:last-child) {
+        margin-right: 24px;
+    }
+    .customers .list .item:nth-child(-n + 3) {
+        margin-bottom: 0;
+    }
+    /* SECOND-PAGE-PORTFOLIO */
+    .portfolio {
+        padding-top: 96px;
+        padding-bottom: 120px;
+    }
+    /* FILTER-BTNS */
+    .filters-list {
+      margin-bottom: 72px;
+    }
+    /* PROJECTS-LIST */
+    .projects-list .item {
+        width: calc((100% - 48px) / 3);
+    }
+    .projects-list .item:not(:nth-child(3n)) {
+        margin-right: 24px;
+    }
+    
+    /* FOOTER  */
+    .footer {
+        padding: 120px 0;
+    }
+    .footer .container {
+        width: inherit;
+        flex-wrap: nowrap;
+        justify-content: center;
+    }
+    .footer .thumb {
+        margin-bottom: 0;
+        margin-right: 120px;
+    }
+    .footer .social-media {
+        margin-bottom: 0;
+        margin-right: 80px;
+    }
+    /* SUBSCRIBE-FORM */
+    .subscribe-form {
+        width: 453px;
+    }
+    .footer .form-field {
+        margin-right: 0;
+    }
+    .subscribe-form .title {
+        display: block;
+        margin-bottom: 16px;
+        margin-right: auto;
+    }
+    .subscribe-form .btn {
+        margin: 0;
+    }
+
+}
