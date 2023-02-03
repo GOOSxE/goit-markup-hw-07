@@ -318,13 +318,9 @@
       url('../images/banner/hero-bg-mob-2x.jpg');
     }
   }
-  .hero .container {
-    width: 100%;
-    padding: 0;
-  }
   .hero .title {
     display: inline-block;
-    width: 320px;
+    max-width: 90%;
     margin-bottom: 72px;
   
     text-align: center;
