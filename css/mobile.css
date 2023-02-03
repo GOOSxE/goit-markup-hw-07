@@ -65,8 +65,8 @@
   .container {
     max-width: 428px;
     margin: 0 auto;
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
   .list{
     margin: 0;
@@ -317,6 +317,10 @@
       var(--hero-gradient) 
       url('../images/banner/hero-bg-mob-2x.jpg');
     }
+  }
+  .hero .container {
+    width: 100%;
+    padding: 0;
   }
   .hero .title {
     display: inline-block;
@@ -876,9 +880,10 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 408px;
-    min-height: 576px;
-    padding: 24px;
+    width: 100%;
+    max-width: 392px;
+    min-height: 586px;
+    padding: 16px;
     padding-top: 72px;
   
     background-color: var(--modal-bg);
@@ -918,6 +923,13 @@
   .modal-close:hover .icon,
   .modal-close:focus .icon {
     fill: var(--white-color);
+  }
+  @media screen and (max-width: 371px) {
+    .modal .title {
+      width: 200px;
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
   .modal .title {
     margin-bottom: 16px;
@@ -1039,6 +1051,11 @@
     letter-spacing: 0.04em;
   
     color: var(--brand-color);
+  }
+  @media screen and (max-width: 371px) {
+    .privacy-link {
+      display: block;
+    }
   }
   .is-hidden {
     visibility: hidden;
