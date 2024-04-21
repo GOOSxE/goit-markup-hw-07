@@ -163,6 +163,9 @@
     .projects-list .item:not(:nth-child(3n)) {
         margin-right: 24px;
     }
+    .projects-list .item:last-child {
+        margin-bottom: 48px;
+    }
     
     /* FOOTER  */
     .footer {
